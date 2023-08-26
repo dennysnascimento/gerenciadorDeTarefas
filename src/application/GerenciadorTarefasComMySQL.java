@@ -24,6 +24,8 @@ public class GerenciadorTarefasComMySQL {
                 System.out.println("1. Adicionar tarefa");
                 System.out.println("2. Listar tarefas");
                 System.out.println("3. Concluir tarefa");
+                System.out.println("9. Sair do programa.");
+
                 try {
                     int escolha = scanner.nextInt();
 

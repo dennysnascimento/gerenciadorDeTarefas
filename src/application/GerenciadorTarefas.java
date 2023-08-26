@@ -67,6 +67,7 @@ public class GerenciadorTarefas {
             System.out.println("1. Adicionar tarefa");
             System.out.println("2. Listar tarefas");
             System.out.println("3. Concluir tarefa");
+            System.out.println("9. Sair do programa.");
 
             try {
                 Integer escolha = scanner.nextInt();
@@ -81,6 +82,9 @@ public class GerenciadorTarefas {
                     System.out.print("Digite o índice da tarefa concluída: ");
                     Integer indiceTarefaConcluida = scanner.nextInt();
                     gerenciador.concluirTarefa(indiceTarefaConcluida);
+                } else if (escolha == 9) {
+                    System.out.print("Saindo do programa.");
+                    return;
                 } else {
                     System.out.println("Opção inválida.");
                 }
